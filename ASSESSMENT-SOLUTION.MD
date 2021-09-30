@@ -5,7 +5,7 @@
 * The scenarios for the Planets validations are developed in Cucumber using Gherkin approach
 * The scenarios for the People validations are developed using Jasmine parametrized approach
 * To run the whole solution you need to:
-  - install dependencies: `npm install`
+  - install dependencies: `npm ci`
   - start NG server: `npm run start`
   - run the tests: `npm run e2e:run`
 
