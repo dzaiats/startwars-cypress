@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://localhost:4200",
+  "ignoreTestFiles": "**/*.steps.ts",
+  "env": {
+    "language": "en",
+    "locale": "en-US"
+  }
+}
