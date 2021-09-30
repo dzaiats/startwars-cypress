@@ -5,10 +5,6 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build --prod",
-    "test": "ng test",
-    "lint": "ng lint",
-    "e2e": "ng e2e",
     "e2e:open": "cypress open",
     "e2e:run": "cypress run"
   },
@@ -49,12 +45,9 @@
     "karma-coverage-istanbul-reporter": "^1.4.3",
     "karma-jasmine": "^1.1.2",
     "karma-jasmine-html-reporter": "^0.2.2",
-    "resolve": "^1.20.0",
     "ts-node": "~4.1.0",
-    "tsify": "^5.0.4",
     "tslint": "~5.9.1",
-    "typescript": "3.2.4",
-    "webdriver-manager": "^12.1.7"
+    "typescript": "3.2.4"
   },
   "cypress-cucumber-preprocessor": {
     "nonGlobalStepDefinitions": true
