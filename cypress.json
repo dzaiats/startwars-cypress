@@ -1,6 +1,7 @@
 {
   "baseUrl": "http://localhost:4200",
   "ignoreTestFiles": "**/*.steps.ts",
+  "defaultCommandTimeout": 10000,
   "env": {
     "language": "en",
     "locale": "en-US"

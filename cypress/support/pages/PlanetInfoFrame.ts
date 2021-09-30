@@ -1,11 +1,11 @@
 export class PlanetInfoFrame {
 
   private getPlanetPopulationElement() {
-    return cy.get('div:contains("Population")').find("div:nth-child(2)");
+    return cy.get('div:contains("Population")').closest('.row').find("div:nth-child(2)");
   }
 
   private getPlanetClimateElement() {
-    return cy.get('div:contains("Climate")').find("div:nth-child(2)");
+    return cy.get('div:contains("Climate")').closest('.row').find("div:nth-child(2)");
   }
 
   verifyPlanetPopulation(population: number) {

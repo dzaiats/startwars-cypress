@@ -1,7 +1,11 @@
 import {SearchPage} from "../../support/pages/SearchPage";
-import {Then, When} from "cypress-cucumber-preprocessor/steps";
+import {Before, Then, When} from "cypress-cucumber-preprocessor/steps";
 
 const searchPage: SearchPage = new SearchPage()
+
+Before(() => {
+  cy.visit("/");
+});
 
 When("I search for the planet {string}", function (planetName: string) {
   searchPage.searchForThePlanet(planetName);
