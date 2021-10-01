@@ -1,6 +1,6 @@
 # QA Engineer Assessment Solution
 
-* The whole solution was done in 4 hours
+* The whole solution was done in 4 hours. Also spent ~1 hour on cleanup
 * Additionally, was implemented Github Actions workflow for continues testing
 * Cleaned-up the framework from unused dependencies and frameworks (Karma, e.g)
 * The scenarios for the Planets validations are developed in Cucumber using Gherkin approach
