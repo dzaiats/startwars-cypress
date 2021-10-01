@@ -15,6 +15,10 @@ export class SearchPage {
     return cy.get("[type=submit]");
   }
 
+  private getNotFoundText() {
+    return cy.contains("Not found.");
+  }
+
   searchForThePlanet(planetName: string) {
     this.getRadioElement("planets").click();
     this.getSearchField().type(planetName)
@@ -35,4 +39,7 @@ export class SearchPage {
     return new PeopleInfoFrame();
   }
 
+  verifyNotFound() {
+    this.getNotFoundText().should('be.visible');
+  }
 }

@@ -1,4 +1,4 @@
-import {SearchPage} from "../../support/pages/SearchPage";
+import {SearchPage} from "../../../support/pages/SearchPage";
 import {Before, Then, When} from "cypress-cucumber-preprocessor/steps";
 
 const searchPage: SearchPage = new SearchPage()
@@ -17,4 +17,8 @@ Then("I should see the planet with a population of {int}", function (population:
 
 Then("I should see the planet with a climate of {string}", function (climate: string) {
   searchPage.getPlanetInfoLayout().verifyPlanetClimate(climate);
+});
+
+Then("I should not see any results", function () {
+  searchPage.verifyNotFound();
 });

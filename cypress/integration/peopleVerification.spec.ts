@@ -22,4 +22,9 @@ describe("Validate possibility of searching for the Star Warspeople", () => {
       searchPage.getPeopleInfoLayout().verifyBirthDate(parameter.birthdate);
     });
   });
+
+  it(`should not be able to find any person with invalid name`, () => {
+    searchPage.searchForThePeople("Bill Gates");
+    searchPage.verifyNotFound();
+  });
 });

@@ -62,62 +62,12 @@
             "browserTarget": "tnt-assignment:build"
           }
         },
-        "test": {
-          "builder": "@angular-devkit/build-angular:karma",
-          "options": {
-            "main": "src/test.ts",
-            "karmaConfig": "./karma.conf.js",
-            "polyfills": "src/polyfills.ts",
-            "tsConfig": "src/tsconfig.spec.json",
-            "scripts": [],
-            "styles": [
-              "src/styles.css"
-            ],
-            "assets": [
-              "src/assets",
-              "src/favicon.ico"
-            ]
-          }
-        },
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
             "tsConfig": [
               "src/tsconfig.app.json",
               "src/tsconfig.spec.json"
-            ],
-            "exclude": [
-              "**/node_modules/**"
-            ]
-          }
-        }
-      }
-    },
-    "tnt-assignment-e2e": {
-      "root": "",
-      "sourceRoot": "",
-      "projectType": "application",
-      "architect": {
-        "e2e": {
-          "builder": "<name of builder>:cypress",
-          "options": {
-            "browser": "chrome",
-            "headless": true
-
-          },
-           "configurations": {
-            "e2e": {
-             "devServerTarget": "tnt-assignment:serve",
-              "configFile": "<your cypress config file>",
-              "headless": false
-            }
-          }
-        },
-        "lint": {
-          "builder": "<name of builder>:tslint",
-          "options": {
-            "tsConfig": [
-              "cypress/tsconfig.e2e.json"
             ],
             "exclude": [
               "**/node_modules/**"

@@ -12,8 +12,11 @@ jobs:
       - name: Install npm dependencies
         run: npm ci
 
+      - name: Run NG lint
+        run: npm run lint
+
       - name: Run NG server
         run: npm run start & sleep 30
 
       - name: Run tests
-        run: npm run e2e:run
+        run: npm run test:run
